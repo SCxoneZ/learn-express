@@ -13,10 +13,7 @@ module.exports = {
   index: {
     
     get: (req, res) => {
-      res.status(200).json({
-        status: true,
-        code: 200,
-        method: req.method,
+      res.render("users", {
         data: usersData
       });
     },

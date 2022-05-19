@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Users List</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <%# This code wont be executed%>
+    <h2>Daftar User</h2>
+    <% data.forEach(user => { %>
+      <ul>
+        <li>Name: <%= user.name %></li>
+        <li>Email: <%= user.email %></li>
+      </ul>
+    <% }) %>
+  </body>
+</html>
